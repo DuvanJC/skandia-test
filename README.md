@@ -4,15 +4,29 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ## Development server
 
-To start a local development server, run:
+To start a local development server:
 
+Make sure you have a version of Node higher than version 21 installed
+
+with npm run:
+```bash
+npm install
+```
+with yarn run:
+```bash
+yarn install
+```
+
+To run deployment server: 
 ```bash
 ng serve
+```
 
 Recommended Command
 To avoid potential errors related to Vite integration, run the project with the following command:
-
+```bash
 ng s -o --no-hmr
+```
 
 Command Details:
 ng serve: Starts the development server.
@@ -21,7 +35,6 @@ ng serve: Starts the development server.
 
 Error: [vite] cannot find entry point module ...
 Note: This error may occur due to conflicts between Vite and Angular when HMR is enabled. Using --no-hmr resolves the issue by forcing a full-page reload instead of dynamically reloading modules.
-```
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
 
