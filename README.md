@@ -8,10 +8,16 @@ To start a local development server:
 
 Make sure you have a version of Node higher than version 21 installed
 
+If you don't have angular/cli yet:
+```bash
+npm install -g @angular/cli
+```
+
 with npm run:
 ```bash
 npm install
 ```
+
 with yarn run:
 ```bash
 yarn install
