@@ -1,0 +1,76 @@
+.banner {
+    background-image: url('/assets/img/carta.png');
+    background-size: auto;
+    background-position: unset;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: left;
+    z-index: -1;
+}
+
+@media (max-width: 577px) {
+    .banner{
+        background: none;
+    }
+}
+
+.card{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #00000029;
+    opacity: 1;
+}
+.card-header{
+    background-image: url('/assets/img/Mask.png');
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+
+.text-banner{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #3F3F3F;
+    opacity: 1;
+}
+
+.subtitle-banner{
+    text-align: center;
+    text-decoration: underline;
+    font: normal normal 600 16px/17px Montserrat;
+    letter-spacing: 0px;
+    color: #00C83C;
+    opacity: 1;
+}
+
+.des-banner{
+    text-align: left;
+    font: normal normal normal 12px/23px Verdana;
+    letter-spacing: 0px;
+    color: #3F3F3F;
+}
+
+.carousel-control-next-icon {
+    background-image: url('/assets/icons/flecha-right.svg');
+}
+
+.carousel-control-prev-icon {
+    background:none;
+}
+
+.text-box {
+    background: 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.text-card{
+    font: normal normal bold 10px/12px Verdana;
+    letter-spacing: 0px;
+    color: #3F3F3F;
+    opacity: 1;
+    text-align: center;
+}

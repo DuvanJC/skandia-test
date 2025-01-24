@@ -8,9 +8,25 @@ To start a local development server, run:
 
 ```bash
 ng serve
-```
 
+Recommended Command
+To avoid potential errors related to Vite integration, run the project with the following command:
+
+ng s -o --no-hmr
+
+Command Details:
+ng serve: Starts the development server.
+-o or --open: Automatically opens the default browser with the application.
+--no-hmr: Disables Hot Module Replacement (HMR), which prevents errors such as:
+
+Error: [vite] cannot find entry point module ...
+Note: This error may occur due to conflicts between Vite and Angular when HMR is enabled. Using --no-hmr resolves the issue by forcing a full-page reload instead of dynamically reloading modules.
+```
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+
+## Styles 
+This project uses Bootstrap as the primary framework to simplify and standardize the styling of components. Bootstrap provides a wide range of pre-designed classes for layout, typography, forms, buttons, and other UI elements, allowing for faster and more consistent development.
 
 ## Code scaffolding
 

@@ -1,0 +1,107 @@
+<section  class="two-column-layout">
+    <div class="left-column">
+        <!-- Contenido de la primera columna -->
+
+        <app-sidebar />
+
+    </div>
+    <div class="right-column">
+        <!-- Contenido de la segunda columna -->
+
+
+            <app-navbar></app-navbar>
+            <div class="mainDiv">
+                <div class="banner">
+                    <div class="banner-content">
+                        <h1 class="title-banner">¡Tu Objetivo ha sido agregado exitosamente!</h1>
+                        <p class="subtitle-banner">!Te hemos enviado un correo con la notificacion¡</p>
+                    </div>
+                    <div class="d-flex icon-right">
+                        <img (click)="handleClick()" src="/assets/icons/home.svg" class="home-icon" alt="Icon">
+                        <a (click)="handleClick()" style="cursor: pointer; color: white;" class="home-text"> Ir al
+                            inicio </a>
+                    </div>
+
+                </div>
+                <div class="container card-center">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <span class="card-title">Conocer a mi sobrino</span><br>
+                                            <span class="card-subtitle">Categoria: Bienestar</span>
+                                        </div>
+                                        <div class="col-4">
+                                            <span class="text-underline">Revisar objetivo</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="container text-center mt-4">
+                                        <div class="row align-items-start">
+                                            <div class="col-md-4 col-sm-12">
+                                                <span>En esta fecha:</span>
+                                                <div class="text-box" style="background-color: #A5D7E1;">
+                                                    <p class="text-card">Diciembre/2022</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12">
+                                                <span>Lograras:</span>
+                                                <div class="text-box" style="background-color:#FECD72;">
+                                                    <p class="text-card">$6.000.000</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12">
+                                                <span>Ya cuentas con:</span>
+                                                <div class="text-box" style="background-color:#95DBB7;">
+                                                    <p class="text-card">$0</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container" style="margin-top: -20px;">
+                                    <div class="row">
+                                        <div class="col-8 text-underline justify-content-center pointer">
+                                            <i class="bi bi-check-circle-fill 16px option-icon"></i>
+                                            <span>¡Asocia productos para monitorear su progreso!</span>
+                                        </div>
+                                        <div class="col-4 card-image">
+                                            <img class="float-end" src="/assets/img/montana.png" alt="Card Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-4">
+                    <div class="row">
+                        <h1 class="title">¡Vamos por esos <a style="color: #FE9200;">$6.000.000</a> para <a
+                                style="color: #FE9200;">Conocer mi sobrino</a>!</h1>
+                        <p class="subtitle"><a>¡A través de tus productos y nuestros rendimientos podremos
+                                lograrlo!</a><br><b>Asocia tus productos o adquiere uno nuevo.</b></p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <app-card (isVisible)="isVisibleChange($event)"></app-card>
+                    </div>
+                </div>
+                <div class="row mt-4 justify-content-center">
+                    <div class="col-4 text-center">
+                        <button class="button-gray button-gray-text">
+                            Asociar Objetivo
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-4" *ngIf="isVisible">
+                    <app-banner></app-banner>
+                </div>
+                <div class="row mt-4">
+                    <app-footer></app-footer>
+                </div>
+            </div>
+    </div>
+</section>

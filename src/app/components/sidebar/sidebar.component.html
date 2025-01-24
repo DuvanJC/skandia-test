@@ -1,0 +1,36 @@
+<div class="sidebar-container" [class.open]="isOpen">
+    <div class="sidebar-body" (click)="toggleSidebar()">
+        <div class="option-container">
+            <i class="bi bi-house-door 16px option-icon"></i>
+            Inicio
+        </div>
+        <div class="option-container">
+            <i class="bi bi-file-earmark 16px option-icon"></i>
+            Contactos
+        </div>
+        <div class="option-container">
+            <i class="bi bi-wrench 16px option-icon"></i>
+            Acciones
+        </div>
+        <div class="option-container">
+            <i class="bi bi-star 16px option-icon"></i>
+            Objetivos
+        </div>
+        <div class="option-container">
+            <i class="bi bi-coin 16px option-icon"></i>
+            Herramientas
+        </div>
+        <div class="option-container">
+            <i class="bi bi-chat 16px option-icon"></i>
+            Servicio al cliente
+        </div>
+    </div>
+</div>
+<div (click)="toggleSidebar()">
+    <div class="top-icon">
+        <i class="bi bi-list" style="font-size: 30px; color: #00C83C;"></i>
+    </div>
+    <div class="visible-side-bar" >
+        <i class="bi bi-house-door 16px option-icon selected"></i>
+    </div>
+</div>
